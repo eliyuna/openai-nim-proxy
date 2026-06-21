@@ -74,7 +74,7 @@ app.post('/v1/chat/completions', async (req, res) => {
           validateStatus: (status) => status < 500
         }).then(res => {
           if (res.status >= 200 && res.status < 300) {
-            nimModel = model;
+            nimModel = nimModel;
           }
         });
       } catch (e) {}
